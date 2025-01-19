@@ -1,6 +1,7 @@
 package com.nsi.whatsappclone.model;
 
 import com.nsi.whatsappclone.common.BaseAuditingEntity;
+import com.nsi.whatsappclone.utils.ChatConstants;
 import com.nsi.whatsappclone.utils.MessageState;
 import com.nsi.whatsappclone.utils.MessageType;
 import jakarta.persistence.*;
@@ -23,6 +24,8 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "chat")
+@NamedQuery(name = ChatConstants.FIND_CHAT_BY_SENDER_ID, query = "SELECT DISTINCT c FROM Chat c WHERE c.sender.id = :senderId OR c.recipient.id = :senderId")
+@NamedQuery(name = ChatConstants.FIND_CHAT_BY_SENDER_ID_RECEIVER, query = "SELECT DISTINCT c FROM Chat c WHERE (c.sender.id = :senderId AND c.recipient.id = :receiverId) OR (c.sender.id = :receiverId AND c.recipient.id = :senderId)")
 public class Chat extends BaseAuditingEntity {
 
     @Id

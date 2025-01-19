@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="">
+    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Update some entities and implement utilities methods in chat entity">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/ChatConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/MessageConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/UserConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Chat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Message.java" afterDir="false" />
@@ -18,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,11 +98,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737310223212</updated>
-      <workItem from="1737310224344" duration="5717000" />
+      <workItem from="1737310224344" duration="7513000" />
     </task>
+    <task id="LOCAL-00001" summary="Update some entities and implement utilities methods in chat entity">
+      <option name="closed" value="true" />
+      <created>1737318398429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737318398429</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update some entities and implement utilities methods in chat entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update some entities and implement utilities methods in chat entity" />
   </component>
 </project>
