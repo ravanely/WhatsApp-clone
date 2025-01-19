@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/common/BaseAuditingEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/MessageState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/MessageType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/WhatsAppCloneApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/WhatsAppCloneApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737310223212</updated>
-      <workItem from="1737310224344" duration="3724000" />
+      <workItem from="1737310224344" duration="5717000" />
     </task>
     <servers />
   </component>

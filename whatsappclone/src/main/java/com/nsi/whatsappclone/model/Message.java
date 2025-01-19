@@ -36,6 +36,10 @@ public class Message extends BaseAuditingEntity {
     @Enumerated(EnumType.STRING)
     private MessageType type;
 
+    @ManyToOne
+    @JoinColumn(name = "chat_id")
+    private Chat chat;
+
     @Column(name = "sender_id",nullable = false)
     private String senderId;
 
