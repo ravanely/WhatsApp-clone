@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Implement file upload feature">
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/dto/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/file/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/UserService.java" afterDir="false" />
+    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Complete file upload feature and user controller">
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/notification/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/notification/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/ws/WebSocketConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/file/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -114,7 +111,7 @@
       <updated>1737310223212</updated>
       <workItem from="1737310224344" duration="8819000" />
       <workItem from="1738341667198" duration="3682000" />
-      <workItem from="1738345408044" duration="8789000" />
+      <workItem from="1738345408044" duration="9864000" />
     </task>
     <task id="LOCAL-00001" summary="Update some entities and implement utilities methods in chat entity">
       <option name="closed" value="true" />
@@ -180,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738362575963</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Complete file upload feature and user controller">
+      <option name="closed" value="true" />
+      <created>1738363657813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738363657813</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +200,7 @@
     <MESSAGE value="Implement chat message features" />
     <MESSAGE value="Implement chat message controller to exposes some api" />
     <MESSAGE value="Implement file upload feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement file upload feature" />
+    <MESSAGE value="Complete file upload feature and user controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete file upload feature and user controller" />
   </component>
 </project>
