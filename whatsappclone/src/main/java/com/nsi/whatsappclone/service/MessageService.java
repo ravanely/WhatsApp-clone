@@ -3,8 +3,12 @@ package com.nsi.whatsappclone.service;
 import com.nsi.whatsappclone.dto.MessageRequest;
 import com.nsi.whatsappclone.dto.MessageResponse;
 import com.nsi.whatsappclone.file.FileService;
+import com.nsi.whatsappclone.file.FileUtils;
 import com.nsi.whatsappclone.model.Chat;
 import com.nsi.whatsappclone.model.Message;
+import com.nsi.whatsappclone.notification.Notification;
+import com.nsi.whatsappclone.notification.NotificationService;
+import com.nsi.whatsappclone.notification.NotificationType;
 import com.nsi.whatsappclone.repository.ChatRepository;
 import com.nsi.whatsappclone.repository.MessageRepository;
 import com.nsi.whatsappclone.utils.MessageState;
@@ -30,6 +34,7 @@ public class MessageService {
     private final ChatRepository chatRepository;
     private final MessageMapper messageMapper;
     private final FileService fileService;
+    private final NotificationService notificationService;
 
     public void saveMessage(MessageRequest messageRequest) {
         Chat chat = chatRepository.findById(messageRequest.getChatId()).orElseThrow(() -> new EntityNotFoundException("Chat not found"));
@@ -44,7 +49,17 @@ public class MessageService {
 
         messageRepository.save(message);
 
-        // todo notification
+        Notification notification = Notification.builder()
+                .chatId(chat.getId())
+                .messageType(messageRequest.getType())
+                .content(messageRequest.getContent())
+                .senderId(messageRequest.getSenderId())
+                .receiverId(messageRequest.getReceiverId())
+                .type(NotificationType.MESSAGE)
+                .chatName(chat.getChatName(message.getSenderId()))
+                .build();
+
+        notificationService.sendNotification(message.getReceiverId(), notification);
     }
 
     public List<MessageResponse> findChatMessages(String chatId) {
@@ -59,7 +74,14 @@ public class MessageService {
 
         messageRepository.setMessagesToSeenByChatId(chatId, MessageState.SEEN);
 
-        //todo notification
+        Notification notification = Notification.builder()
+                .chatId(chat.getId())
+                .senderId(getSenderId(chat, authentication))
+                .receiverId(recipientId)
+                .type(NotificationType.SEEN)
+                .build();
+
+        notificationService.sendNotification(recipientId, notification);
     }
 
     public void uploadMediaMessage(String chatId, MultipartFile file, Authentication authentication) {
@@ -80,7 +102,16 @@ public class MessageService {
 
         messageRepository.save(message);
 
-        // todo notification
+        Notification notification = Notification.builder()
+                .chatId(chat.getId())
+                .messageType(MessageType.IMAGE)
+                .type(NotificationType.IMAGE)
+                .senderId(senderId)
+                .receiverId(recipientId)
+                .media(FileUtils.readFileFromLocation(filePath))
+                .build();
+
+        notificationService.sendNotification(recipientId, notification);
     }
 
     private String getSenderId(Chat chat, Authentication authentication) {

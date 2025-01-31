@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Complete file upload feature and user controller">
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/notification/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/notification/NotificationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/ws/WebSocketConfig.java" afterDir="false" />
+    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Add secure websocket dependencies and start implement notification features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,7 @@
       <updated>1737310223212</updated>
       <workItem from="1737310224344" duration="8819000" />
       <workItem from="1738341667198" duration="3682000" />
-      <workItem from="1738345408044" duration="9864000" />
+      <workItem from="1738345408044" duration="10438000" />
     </task>
     <task id="LOCAL-00001" summary="Update some entities and implement utilities methods in chat entity">
       <option name="closed" value="true" />
@@ -185,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738363657813</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add secure websocket dependencies and start implement notification features">
+      <option name="closed" value="true" />
+      <created>1738364554851</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738364554851</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +205,7 @@
     <MESSAGE value="Implement chat message controller to exposes some api" />
     <MESSAGE value="Implement file upload feature" />
     <MESSAGE value="Complete file upload feature and user controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete file upload feature and user controller" />
+    <MESSAGE value="Add secure websocket dependencies and start implement notification features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add secure websocket dependencies and start implement notification features" />
   </component>
 </project>
