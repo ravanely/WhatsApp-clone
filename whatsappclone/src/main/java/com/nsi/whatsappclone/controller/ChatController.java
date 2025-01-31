@@ -1,6 +1,6 @@
 package com.nsi.whatsappclone.controller;
 
-import com.nsi.whatsappclone.chat.ChatResponse;
+import com.nsi.whatsappclone.dto.ChatResponse;
 import com.nsi.whatsappclone.common.StringResponse;
 import com.nsi.whatsappclone.service.ChatService;
 import lombok.RequiredArgsConstructor;

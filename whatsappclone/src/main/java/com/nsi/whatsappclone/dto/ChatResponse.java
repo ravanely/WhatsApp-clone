@@ -1,4 +1,4 @@
-package com.nsi.whatsappclone.chat;
+package com.nsi.whatsappclone.dto;
 
 import lombok.*;
 

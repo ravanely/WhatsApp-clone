@@ -1,6 +1,6 @@
 package com.nsi.whatsappclone.service;
 
-import com.nsi.whatsappclone.chat.ChatResponse;
+import com.nsi.whatsappclone.dto.ChatResponse;
 import com.nsi.whatsappclone.model.Chat;
 import com.nsi.whatsappclone.model.User;
 import com.nsi.whatsappclone.repository.ChatRepository;
