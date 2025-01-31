@@ -1,4 +1,4 @@
-package com.nsi.whatsappclone.service;
+package com.nsi.whatsappclone.file;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

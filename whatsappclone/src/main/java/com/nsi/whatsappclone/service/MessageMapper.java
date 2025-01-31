@@ -1,6 +1,7 @@
 package com.nsi.whatsappclone.service;
 
 import com.nsi.whatsappclone.dto.MessageResponse;
+import com.nsi.whatsappclone.file.FileUtils;
 import com.nsi.whatsappclone.model.Message;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class MessageMapper {
                 .type(message.getType())
                 .state(message.getState())
                 .createdAt(message.getCreatedDate())
-                // todo read the media file
+                .media(FileUtils.readFileFromLocation(message.getMediaFilePath()))
                 .build();
     }
 }

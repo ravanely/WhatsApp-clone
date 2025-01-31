@@ -2,6 +2,7 @@ package com.nsi.whatsappclone.service;
 
 import com.nsi.whatsappclone.dto.MessageRequest;
 import com.nsi.whatsappclone.dto.MessageResponse;
+import com.nsi.whatsappclone.file.FileService;
 import com.nsi.whatsappclone.model.Chat;
 import com.nsi.whatsappclone.model.Message;
 import com.nsi.whatsappclone.repository.ChatRepository;
