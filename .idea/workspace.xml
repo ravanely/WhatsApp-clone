@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Update some entities and implement utilities methods in chat entity">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/ChatConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/MessageConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/utils/UserConstants.java" afterDir="false" />
+    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Define name queries in our entities">
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/interceptor/UserSynchronizerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/security/UserSynchronizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,24 +29,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ravanely"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ravanely&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ravanely/WhatsApp-clone.git",
-    "accountId": "a9098f1a-2e10-49de-b13b-452f1cf91c5a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ravanely/WhatsApp-clone.git&quot;,
+    &quot;accountId&quot;: &quot;a9098f1a-2e10-49de-b13b-452f1cf91c5a&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2rrHMGVFI6YPn4VxESCgxb5FeZJ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,31 +55,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nsi.whatsappclone.security" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WhatsAppCloneApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="whatsappclone" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nsi.whatsappclone.WhatsAppCloneApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -98,7 +106,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737310223212</updated>
-      <workItem from="1737310224344" duration="7513000" />
+      <workItem from="1737310224344" duration="8819000" />
+      <workItem from="1738341667198" duration="2290000" />
     </task>
     <task id="LOCAL-00001" summary="Update some entities and implement utilities methods in chat entity">
       <option name="closed" value="true" />
@@ -108,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737318398429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Define name queries in our entities">
+      <option name="closed" value="true" />
+      <created>1737320043894</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737320043894</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update some entities and implement utilities methods in chat entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update some entities and implement utilities methods in chat entity" />
+    <MESSAGE value="Define name queries in our entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Define name queries in our entities" />
   </component>
 </project>
