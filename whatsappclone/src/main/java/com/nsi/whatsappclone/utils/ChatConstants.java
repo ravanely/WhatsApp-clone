@@ -7,5 +7,5 @@ package com.nsi.whatsappclone.utils;
  **/
 public class ChatConstants {
     public static final String FIND_CHAT_BY_SENDER_ID = "Chats.findChatBySenderId";
-    public static final String FIND_CHAT_BY_SENDER_ID_RECEIVER = "Chats.findChatBySenderIdAndReceiver";
+    public static final String FIND_CHAT_BY_SENDER_ID_AND_RECEIVER = "Chats.findChatBySenderIdAndReceiver";
 }
