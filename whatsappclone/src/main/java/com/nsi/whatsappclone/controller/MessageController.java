@@ -3,6 +3,8 @@ package com.nsi.whatsappclone.controller;
 import com.nsi.whatsappclone.dto.MessageRequest;
 import com.nsi.whatsappclone.dto.MessageResponse;
 import com.nsi.whatsappclone.service.MessageService;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +21,7 @@ import java.util.List;
  **/
 @RestController
 @RequestMapping("/api/v1/messages")
+@Tag(name = "Message")
 @RequiredArgsConstructor
 public class MessageController {
     private final MessageService messageService;
@@ -31,7 +34,7 @@ public class MessageController {
 
     @PostMapping(value = "/upload-media", consumes = "multipart/form-data")
     @ResponseStatus(HttpStatus.CREATED)
-    public void uploadMedia(@RequestParam(name = "chat-id") String chatId, @RequestParam(name = "file") MultipartFile file, Authentication authentication) {
+    public void uploadMedia(@RequestParam(name = "chat-id") String chatId, @Parameter() @RequestParam(name = "file") MultipartFile file, Authentication authentication) {
         messageService.uploadMediaMessage(chatId, file, authentication);
     }
 

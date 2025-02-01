@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Add secure websocket dependencies and start implement notification features">
+    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Update message service to add notification feature">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/WhatsAppCloneApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/WhatsAppCloneApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/interceptor/UserSynchronizerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/interceptor/UserSynchronizerFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/ws/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/java/com/nsi/whatsappclone/ws/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsappclone/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whatsappclone/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,27 +59,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.WhatsAppCloneApiApplication.executor": "Debug",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nsi.whatsappclone.repository" />
@@ -107,7 +120,7 @@
       <updated>1737310223212</updated>
       <workItem from="1737310224344" duration="8819000" />
       <workItem from="1738341667198" duration="3682000" />
-      <workItem from="1738345408044" duration="10438000" />
+      <workItem from="1738345408044" duration="13436000" />
     </task>
     <task id="LOCAL-00001" summary="Update some entities and implement utilities methods in chat entity">
       <option name="closed" value="true" />
@@ -189,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738364554851</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update message service to add notification feature">
+      <option name="closed" value="true" />
+      <created>1738365149486</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738365149486</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +227,7 @@
     <MESSAGE value="Implement file upload feature" />
     <MESSAGE value="Complete file upload feature and user controller" />
     <MESSAGE value="Add secure websocket dependencies and start implement notification features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add secure websocket dependencies and start implement notification features" />
+    <MESSAGE value="Update message service to add notification feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update message service to add notification feature" />
   </component>
 </project>

@@ -2,6 +2,7 @@ package com.nsi.whatsappclone.controller;
 
 import com.nsi.whatsappclone.dto.UserResponse;
 import com.nsi.whatsappclone.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -18,6 +19,7 @@ import java.util.List;
  **/
 @RestController
 @RequestMapping("/api/v1/users")
+@Tag(name = "User")
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
