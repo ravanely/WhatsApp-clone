@@ -3,17 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-4||-9223372036854775808|c|G
-4||10|c|G
-4||10|C|G
-4||10|T|G</Grants>
-      <IntrospectionStateNumber>752</IntrospectionStateNumber>
+      <IntrospectionStateNumber>767</IntrospectionStateNumber>
       <ServerVersion>17.2</ServerVersion>
-      <StartupTime>1737308950</StartupTime>
+      <StartupTime>1738365915</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1412,7 +1404,7 @@ false posixrules
 13219||10|C|G
 13219||-9223372036854775808|U|G
 13219||10|U|G</Grants>
-      <IntrospectionStateNumber>752</IntrospectionStateNumber>
+      <IntrospectionStateNumber>767</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4834,11 +4826,342 @@ false posixrules
     <schema id="265" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>752</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2025-01-19.18:12:52</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>767</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2025-02-01.01:08:51</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <sequence id="266" parent="265" name="msg_seq">
+      <ObjectId>16412</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>756</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="267" parent="265" name="chat">
+      <ObjectId>16428</ObjectId>
+      <StateNumber>763</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="268" parent="265" name="dto">
+      <ObjectId>16389</ObjectId>
+      <StateNumber>757</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="269" parent="265" name="messages">
+      <ObjectId>16396</ObjectId>
+      <StateNumber>759</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="270" parent="265" name="users">
+      <ObjectId>16405</ObjectId>
+      <StateNumber>757</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="271" parent="267" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>762</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="272" parent="267" name="created_date">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>762</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="273" parent="267" name="last_modified_date">
+      <Position>3</Position>
+      <StateNumber>762</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="274" parent="267" name="recipient_id">
+      <Position>4</Position>
+      <StateNumber>762</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="275" parent="267" name="sender_id">
+      <Position>5</Position>
+      <StateNumber>762</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="276" parent="267" name="fkmyyew1n6wnytn0fgxo99g30mj">
+      <ColNames>recipient_id</ColNames>
+      <ObjectId>16435</ObjectId>
+      <StateNumber>763</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16405</RefTableId>
+    </foreign-key>
+    <foreign-key id="277" parent="267" name="fkl5tt48eo95f9i8ngbdk440nml">
+      <ColNames>sender_id</ColNames>
+      <ObjectId>16440</ObjectId>
+      <StateNumber>764</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16405</RefTableId>
+    </foreign-key>
+    <index id="278" parent="267" name="chat_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16433</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>762</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="279" parent="267" name="chat_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16434</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>762</StateNumber>
+      <UnderlyingIndexId>16433</UnderlyingIndexId>
+    </key>
+    <column id="280" parent="268" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>753</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="281" parent="268" name="created_date">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>753</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="282" parent="268" name="last_modified_date">
+      <Position>3</Position>
+      <StateNumber>753</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="283" parent="268" name="recipient_id">
+      <Position>4</Position>
+      <StateNumber>753</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="284" parent="268" name="sender_id">
+      <Position>5</Position>
+      <StateNumber>753</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="285" parent="268" name="fk2u3as4n4wd0kob455l5noskrt">
+      <ColNames>recipient_id</ColNames>
+      <ObjectId>16413</ObjectId>
+      <StateNumber>757</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16405</RefTableId>
+    </foreign-key>
+    <foreign-key id="286" parent="268" name="fkam4i5kckn2smhcmqx62kwolsn">
+      <ColNames>sender_id</ColNames>
+      <ObjectId>16418</ObjectId>
+      <StateNumber>758</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16405</RefTableId>
+    </foreign-key>
+    <index id="287" parent="268" name="dto_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16394</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>753</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="288" parent="268" name="dto_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16395</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>753</StateNumber>
+      <UnderlyingIndexId>16394</UnderlyingIndexId>
+    </key>
+    <check id="289" parent="269" name="messages_state_check">
+      <ColNames>state</ColNames>
+      <ObjectId>16399</ObjectId>
+      <Predicate>(state)::text = ANY ((ARRAY[&apos;SENT&apos;::character varying, &apos;SEEN&apos;::character varying])::text[])</Predicate>
+      <StateNumber>754</StateNumber>
+    </check>
+    <check id="290" parent="269" name="messages_type_check">
+      <ColNames>type</ColNames>
+      <ObjectId>16400</ObjectId>
+      <Predicate>(type)::text = ANY ((ARRAY[&apos;TEXT&apos;::character varying, &apos;IMAGE&apos;::character varying, &apos;AUDIO&apos;::character varying, &apos;VIDEO&apos;::character varying])::text[])</Predicate>
+      <StateNumber>754</StateNumber>
+    </check>
+    <column id="291" parent="269" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="292" parent="269" name="created_date">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="293" parent="269" name="last_modified_date">
+      <Position>3</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="294" parent="269" name="content">
+      <Position>4</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="295" parent="269" name="media_file_path">
+      <Position>5</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="296" parent="269" name="receiver_id">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="297" parent="269" name="sender_id">
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="298" parent="269" name="state">
+      <Position>8</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="299" parent="269" name="type">
+      <Position>9</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="300" parent="269" name="chat_id">
+      <Position>10</Position>
+      <StateNumber>754</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="301" parent="269" name="fk2ll6vtbvy0ichmmbyv0887fwh">
+      <ColNames>chat_id</ColNames>
+      <ObjectId>16423</ObjectId>
+      <StateNumber>759</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16389</RefTableId>
+    </foreign-key>
+    <foreign-key id="302" parent="269" name="fkdumcu11xf8ldun8i4xpd04j43">
+      <ColNames>chat_id</ColNames>
+      <ObjectId>16445</ObjectId>
+      <StateNumber>765</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16428</RefTableId>
+    </foreign-key>
+    <index id="303" parent="269" name="messages_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16403</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>754</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="304" parent="269" name="messages_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16404</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>754</StateNumber>
+      <UnderlyingIndexId>16403</UnderlyingIndexId>
+    </key>
+    <column id="305" parent="270" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>755</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="306" parent="270" name="created_date">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>755</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="307" parent="270" name="last_modified_date">
+      <Position>3</Position>
+      <StateNumber>755</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="308" parent="270" name="email">
+      <Position>4</Position>
+      <StateNumber>755</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="309" parent="270" name="first_name">
+      <Position>5</Position>
+      <StateNumber>755</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="310" parent="270" name="last_name">
+      <Position>6</Position>
+      <StateNumber>755</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="311" parent="270" name="last_seen">
+      <Position>7</Position>
+      <StateNumber>755</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="312" parent="270" name="users_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16410</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>755</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="313" parent="270" name="users_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16411</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>755</StateNumber>
+      <UnderlyingIndexId>16410</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>
