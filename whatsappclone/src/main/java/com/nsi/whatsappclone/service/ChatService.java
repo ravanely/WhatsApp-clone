@@ -29,9 +29,9 @@ public class ChatService {
 
     @Transactional(readOnly = true)
     public List<ChatResponse> getChatsByReceiverId(Authentication currentUser) {
-        final String userId = currentUser.getName();
-        return chatRepository.findChatsBySenderId(userId)
-                .stream().map(chat -> chatMapper.toChatResponse(chat, userId)).toList();
+        final String senderId = currentUser.getName();
+        return chatRepository.findChatsBySenderId(senderId)
+                .stream().map(chat -> chatMapper.toChatResponse(chat, senderId)).toList();
     }
 
     public String createChat(String senderId, String receiverId) {

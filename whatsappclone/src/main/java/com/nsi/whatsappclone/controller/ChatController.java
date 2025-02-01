@@ -35,6 +35,7 @@ public class ChatController {
 
     @GetMapping
     public ResponseEntity<List<ChatResponse>> getChatsByReceiver(Authentication currentUser) {
+
         return ResponseEntity.ok(chatService.getChatsByReceiverId(currentUser));
     }
 }
