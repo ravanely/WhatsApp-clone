@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Add openapi dependencies, add documentation config and solve issues" />
+    <list default="true" id="3365751d-0a3d-423b-b85b-aa42d8b1bc1b" name="Changes" comment="Create frontend and add main dependencies">
+      <change afterPath="$PROJECT_DIR$/whatsapp-clone-ui/src/openapi/openapi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp-clone-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp-clone-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp-clone-ui/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp-clone-ui/src/app/app.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +71,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/ravanely/IdeaProjects/whatsapp-clone/whatsapp-clone-ui/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -109,7 +115,7 @@
       <updated>1737310223212</updated>
       <workItem from="1737310224344" duration="8819000" />
       <workItem from="1738341667198" duration="3682000" />
-      <workItem from="1738345408044" duration="13756000" />
+      <workItem from="1738345408044" duration="15029000" />
     </task>
     <task id="LOCAL-00001" summary="Update some entities and implement utilities methods in chat entity">
       <option name="closed" value="true" />
@@ -207,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738369261667</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Create frontend and add main dependencies">
+      <option name="closed" value="true" />
+      <created>1738369765329</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738369765329</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +240,7 @@
     <MESSAGE value="Add secure websocket dependencies and start implement notification features" />
     <MESSAGE value="Update message service to add notification feature" />
     <MESSAGE value="Add openapi dependencies, add documentation config and solve issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add openapi dependencies, add documentation config and solve issues" />
+    <MESSAGE value="Create frontend and add main dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create frontend and add main dependencies" />
   </component>
 </project>
